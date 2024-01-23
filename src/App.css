@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "sweet";
+  src: local("Sweer"), url("./font/sweet.ttf") format("truetype");
+  font-weight: normal;
+}
+
 .App {
   text-align: center;
+  font-family: "Sweet";
+  max-height: 5000px;
 }
 
 .App-logo {
