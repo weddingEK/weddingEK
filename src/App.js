@@ -1,6 +1,5 @@
 import "./App.css";
 import BannerComponent from "./component/BannerComponent";
-import TimerComponent from "./component/TimerComponent";
 import WeddingConvert from "./component/WeddingConvert";
 import Place from "./component/Place";
 import BaseContainer from "./component/BaseContainer";
@@ -9,12 +8,13 @@ import Prog from "./component/Prog";
 import { Text, Btn } from "./component/Colors/styles";
 import Form from "./component/Form";
 import "./font/sweet.ttf";
+import "./font/Oranienbaum.ttf";
+import { Container } from "./styles";
 
 function App() {
   return (
-    <div className='App'>
+    <Container>
       <BannerComponent />
-      <TimerComponent />
       <WeddingConvert />
       <Place />
       <div id='prog'>
@@ -60,7 +60,7 @@ function App() {
           <Btn>+79272751199</Btn>
         </a>
       </BaseContainer>
-    </div>
+    </Container>
   );
 }
 

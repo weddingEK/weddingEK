@@ -1,7 +1,7 @@
 import { Container, Numbers } from "./styles";
 
 export default function TimerComponent() {
-  var endDate = new Date("Apr 30, 2023 14:30:00").getTime();
+  var endDate = new Date("Jul 27, 2024 15:30:00").getTime();
   var decCache = [],
     decCases = [2, 0, 1, 1, 1, 2];
 
