@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5aa17221.css",
-    "main.js": "/static/js/main.998285c8.js",
+    "main.css": "/static/css/main.0f904000.css",
+    "main.js": "/static/js/main.1907f4bb.js",
     "static/js/787.6d1fe003.chunk.js": "/static/js/787.6d1fe003.chunk.js",
     "static/media/bg.jpeg": "/static/media/bg.6c95308b2a933c77435f.jpeg",
     "static/media/city.jpeg": "/static/media/city.40a732620012e555e465.jpeg",
@@ -10,15 +10,17 @@
     "static/media/p2.jpeg": "/static/media/p2.96ca4286392e6d11c54a.jpeg",
     "static/media/p3.jpeg": "/static/media/p3.598f23ee3227664440ff.jpeg",
     "static/media/sweet.ttf": "/static/media/sweet.cc42e753706b5a0d6ef5.ttf",
+    "static/media/flower.png": "/static/media/flower.15de324b652f8ae60716.png",
+    "static/media/Oranienbaum.ttf": "/static/media/Oranienbaum.e5625604e9200634b240.ttf",
     "static/media/image.png": "/static/media/image.c4dba9de3f00c7415289.png",
-    "static/media/main-photo.jpeg": "/static/media/main-photo.4175cdad1abe71382e88.jpeg",
+    "static/media/main-photo.jpeg": "/static/media/main-photo.42d3d959c8a59c3d217f.jpeg",
     "index.html": "/index.html",
-    "main.5aa17221.css.map": "/static/css/main.5aa17221.css.map",
-    "main.998285c8.js.map": "/static/js/main.998285c8.js.map",
+    "main.0f904000.css.map": "/static/css/main.0f904000.css.map",
+    "main.1907f4bb.js.map": "/static/js/main.1907f4bb.js.map",
     "787.6d1fe003.chunk.js.map": "/static/js/787.6d1fe003.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5aa17221.css",
-    "static/js/main.998285c8.js"
+    "static/css/main.0f904000.css",
+    "static/js/main.1907f4bb.js"
   ]
 }
