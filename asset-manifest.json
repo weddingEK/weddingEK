@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.a1b526c4.css",
-    "main.js": "/static/js/main.8dcd53ef.js",
-    "static/js/787.6d1fe003.chunk.js": "/static/js/787.6d1fe003.chunk.js",
-    "static/media/bg.jpeg": "/static/media/bg.ec01606e8a4ed2544ca3.jpeg",
-    "static/media/city.jpeg": "/static/media/city.40a732620012e555e465.jpeg",
-    "static/media/sweet.ttf": "/static/media/sweet.cc42e753706b5a0d6ef5.ttf",
-    "static/media/flower.png": "/static/media/flower.15de324b652f8ae60716.png",
-    "static/media/Oranienbaum.ttf": "/static/media/Oranienbaum.e5625604e9200634b240.ttf",
-    "static/media/date.png": "/static/media/date.c3a264c314e351faa3a0.png",
-    "static/media/image.png": "/static/media/image.c4dba9de3f00c7415289.png",
-    "static/media/main-photo.jpeg": "/static/media/main-photo.42d3d959c8a59c3d217f.jpeg",
-    "index.html": "/index.html",
-    "main.a1b526c4.css.map": "/static/css/main.a1b526c4.css.map",
-    "main.8dcd53ef.js.map": "/static/js/main.8dcd53ef.js.map",
-    "787.6d1fe003.chunk.js.map": "/static/js/787.6d1fe003.chunk.js.map"
+    "main.css": "/weddingEK/static/css/main.0763693e.css",
+    "main.js": "/weddingEK/static/js/main.513672ed.js",
+    "static/js/787.6d1fe003.chunk.js": "/weddingEK/static/js/787.6d1fe003.chunk.js",
+    "static/media/bg.jpeg": "/weddingEK/static/media/bg.ec01606e8a4ed2544ca3.jpeg",
+    "static/media/city.jpeg": "/weddingEK/static/media/city.40a732620012e555e465.jpeg",
+    "static/media/sweet.ttf": "/weddingEK/static/media/sweet.cc42e753706b5a0d6ef5.ttf",
+    "static/media/flower.png": "/weddingEK/static/media/flower.15de324b652f8ae60716.png",
+    "static/media/Oranienbaum.ttf": "/weddingEK/static/media/Oranienbaum.e5625604e9200634b240.ttf",
+    "static/media/date.png": "/weddingEK/static/media/date.c3a264c314e351faa3a0.png",
+    "static/media/image.png": "/weddingEK/static/media/image.c4dba9de3f00c7415289.png",
+    "static/media/main-photo.jpeg": "/weddingEK/static/media/main-photo.42d3d959c8a59c3d217f.jpeg",
+    "index.html": "/weddingEK/index.html",
+    "main.0763693e.css.map": "/weddingEK/static/css/main.0763693e.css.map",
+    "main.513672ed.js.map": "/weddingEK/static/js/main.513672ed.js.map",
+    "787.6d1fe003.chunk.js.map": "/weddingEK/static/js/787.6d1fe003.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1b526c4.css",
-    "static/js/main.8dcd53ef.js"
+    "static/css/main.0763693e.css",
+    "static/js/main.513672ed.js"
   ]
 }
