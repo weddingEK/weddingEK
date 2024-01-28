@@ -6,6 +6,9 @@ export const Container = styled.div`
   height: 100vh;
   width: 100%;
   overflow-y: scroll;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   background-image: url(${background});
   background-position: top center;
   background-repeat: no-repeat;
@@ -14,7 +17,8 @@ export const Container = styled.div`
     content: "";
     background-image: url(${background});
     background-position: top center;
-    position: absolute;
+    position: fixed;
+    background-repeat: repeat;
     top: 0px;
     right: 0px;
     bottom: 0px;

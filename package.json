@@ -1,6 +1,7 @@
 {
   "name": "wedding-e-k",
   "version": "0.1.0",
+  "homepage": "https://weddingEK.github.io/weddingEK",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

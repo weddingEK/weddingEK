@@ -1,62 +1,70 @@
 import styled from "styled-components";
-import city from "./assets/city.jpeg";
+import place from "./assets/place.webp";
+import flower from "./assets/fower.png";
 
 export const Container = styled.div`
-  position: relative;
-  padding: 40px 20px 80px;
-  margin: -50px 0 0;
-`;
+  align-items: center;
+  padding: 0 20px 80px;
+  width: 537px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
 
-export const PlaceBackground = styled.div`
-  margin: 32px -20px 32px;
-  position: relative;
-  max-width: 980px;
-  background-image: url(${city});
-  filter: saturate(0.7);
-  height: 460px;
-  background-size: cover;
-  overflow: hidden;
-
-  @media (min-width: 680px) {
-    margin: 32px auto 32px;
+  @media (max-width: 680px) {
+    width: 370px;
   }
 `;
 
-export const Im = styled.img`
-  position: absolute;
-  bottom: 70px;
-  left: -20px;
-`;
+export const TitleComponent = styled.div`
+  align-self: start;
+  p {
+    text-wrap: nowrap;
+  }
 
-export const Content = styled.div`
-  background-color: white;
-  position: absolute;
-  bottom: 70px;
-  right: -40px;
-  border-radius: 50%;
-  height: 304px;
-  width: 304px;
-  box-shadow: 0 0 0 16px rgb(255 255 255 / 35%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 48px;
+  @media (max-width: 680px) {
+    p {
+      font-size: 28px;
+    }
+  }
 `;
 
 export const Text = styled.p`
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 32px;
   margin: 0;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 980px;
+  margin: 32px 0;
 `;
 
-export const SubText = styled(Text)`
-  margin: 0;
-  font-size: 22px;
+export const Image = styled.div`
+  position: relative;
+  background-image: url(${place});
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  margin-left: 40px;
 `;
 
-export const Con = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 12px;
+export const Inner = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 2px solid black;
+  top: 20px;
+  right: -20px;
+  border-radius: 20px;
+  z-index: 10;
+`;
+
+export const Flower = styled.div`
+  background-image: url(${flower});
+  height: 320px;
+  position: absolute;
+  top: 120px;
+  left: -120px;
+  z-index: 10;
+  width: 180px;
+  background-size: cover;
+  transform: rotate(-23deg);
 `;

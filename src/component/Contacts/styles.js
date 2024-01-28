@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 0 20px 80px;
+  padding: 80px 20px;
   text-align: center;
   width: 537px;
   display: flex;
@@ -49,7 +49,7 @@ export const Btn = styled.button`
   font-size: 14px;
   text-decoration: none;
   margin: 30px 0;
-  background-color: #5a86ad;
+  background-color: #c3a3bf;
   border-radius: 10px;
   padding: 14px 60px;
   text-transform: uppercase;

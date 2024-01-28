@@ -1,12 +1,23 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  padding: 0 20px 0;
+  width: 537px;
+  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  text-align: start;
-  font-size: 18px;
-  gap: 20px;
+  gap: 32px;
+
+  iframe {
+    background-color: white;
+    border-radius: 12px;
+    padding-bottom: 22px;
+  }
+
+  @media (max-width: 680px) {
+    width: 370px;
+  }
 `;
 
 export const CheckOnIt = styled.div`

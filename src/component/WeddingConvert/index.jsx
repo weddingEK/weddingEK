@@ -1,40 +1,26 @@
-import { Container, Title, Text, Pictures } from "./styles";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-// import required modules
-import { Pagination } from "swiper";
-import p1 from "./assets/p1.jpeg";
-import p2 from "./assets/p2.jpeg";
-import p3 from "./assets/p3.jpeg";
-import p4 from "./assets/p4.jpeg";
+import { Container, CalendarImage, Text } from "./styles";
+import Title from "../Title";
 
 export default function WeddingConvert() {
   return (
     <Container id='convert'>
-      <Title>Дорогие друзья!</Title>
+      <Title text='Дорогие наши друзья и близкие!' />
       <Text>
-        Один день в этом году будет особенным и мы хотим провести его в кругу
-        близких и друзей. С большим удовольствием приглашаем вас на
-        знаменательный праздник - нашу свадьбу!
+        «Самое главное и ценное в жизни - это семья! Сначала, в которой ты
+        рождаешься, а затем, которую ты создаешь»
       </Text>
-      <Swiper pagination={true} modules={[Pagination]} className='mySwiper'>
-        <SwiperSlide>
-          <Pictures src={p1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Pictures src={p2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Pictures src={p3} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Pictures src={p4} />
-        </SwiperSlide>
-      </Swiper>
+
+      <Text>
+        <b>27 июля 2024 года</b>
+        <br />
+        Состоится счастливое и значимое событие - день нашей свадьбы
+      </Text>
+
+      <CalendarImage />
+
+      <Text>
+        Приглашаем вас стать гостем этого волнительного и счастливого события
+      </Text>
     </Container>
   );
 }

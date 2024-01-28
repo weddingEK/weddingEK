@@ -1,37 +1,17 @@
 import styled from "styled-components";
-import background from "./assets/bg.jpeg";
+import Calendar from "./assets/date.png";
 
 export const Container = styled.div`
   position: relative;
-  padding: 110px 20px 80px;
+  padding: 0 20px 0;
   margin: -50px 0 0;
+  width: 537px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
-  .swiper-pagination-bullet {
-    background-color: white;
-  }
-
-  .swiper-pagination-bullet-active {
-    background-color: #faebdc;
-  }
-
-  :before {
-    content: "";
-    background-image: url(${background});
-    /* CSS gradients */
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0) 20%,
-        rgba(255, 255, 255, 1)
-      ),
-      url(${background});
-    background-position: top center;
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.3;
+  @media (max-width: 680px) {
+    width: 370px;
   }
 `;
 
@@ -55,24 +35,31 @@ export const Title = styled.h2`
 `;
 
 export const Text = styled.p`
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.8);
+  font-family: sans-serif;
   position: relative;
+  text-align: center;
   z-index: 112;
   padding: 10px 20px;
   margin: 48px auto 48px;
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 5px;
-  max-width: 980px;
+  text-shadow: 2px 2px 0px #fff;
+  max-width: 80%;
+
+  b {
+    color: rgba(99, 34, 64, 0.8);
+    font-family: "oranienbaum";
+    font-size: 32px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 12px;
+  }
 `;
 
-export const Pictures = styled.img`
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  border-radius: 10px;
-  max-width: 980px;
-
-  @media (max-width: 690px) {
-    height: 420px;
-  }
+export const CalendarImage = styled.div`
+  border-radius: 12px;
+  width: 360px;
+  height: 360px;
+  background-image: url(${Calendar});
+  background-size: cover;
 `;
