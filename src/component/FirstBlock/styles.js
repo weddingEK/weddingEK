@@ -1,0 +1,194 @@
+import styled from "styled-components";
+import lavander from "./assets/lavander-circle.png";
+import lavanderTop from "./assets/lavander-top.png";
+import leaf from "./assets/leaf.png";
+
+export const Container = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  background-image: url(${lavander});
+  gap: 32px;
+  height: calc(100% - 80px);
+  background-position: center;
+  background-size: 480px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  animation: aniCircle 3s forwards;
+
+  @keyframes aniCircle {
+    0% {
+      background-size: 480px;
+    }
+    100% {
+      background-size: 430px;
+    }
+  }
+`;
+
+export const Title = styled.h2`
+  opacity: 0.4;
+  height: 40px;
+  padding: 40px 0 0;
+  margin: 0;
+  animation: ani 1.5s forwards;
+  color: #534f75;
+  font-size: 20px;
+  font-family: "exo";
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+
+  @keyframes ani {
+    0% {
+      opacity: 0.4;
+      padding: 40px 0 0;
+    }
+    100% {
+      opacity: 0.8;
+      padding: 0 0 40px;
+    }
+  }
+`;
+
+export const Data = styled.h2`
+  opacity: 0.4;
+  height: 20px;
+  padding: 40px 0 0;
+  margin: 0;
+  animation: aniData 1.5s forwards;
+  color: #534f75;
+  font-size: 20px;
+  font-family: "exo";
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  animation-delay: 0.5s;
+
+  @keyframes aniData {
+    0% {
+      opacity: 0.4;
+      padding: 40px 0 0;
+    }
+    100% {
+      opacity: 0.8;
+      padding: 0 0 40px;
+    }
+  }
+`;
+
+export const Names = styled.span`
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "madelyn";
+  height: 280px;
+  gap: 8px;
+  margin: 40px 0;
+  font-size: 64px;
+  color: #534f76;
+  width: 100%;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+`;
+
+export const Man = styled.p`
+  position: absolute;
+  top: 20px;
+  left: 0;
+  line-height: 82px;
+  font-size: 98px;
+  transform: translate(0, 0);
+  animation: aniMan 1.5s forwards;
+  animation-delay: 0.5ms;
+
+  @keyframes aniMan {
+    0% {
+      left: 0%;
+      transform: translate(0, 0);
+    }
+    100% {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+`;
+
+export const Women = styled.p`
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  line-height: 82px;
+  font-size: 92px;
+  transform: translate(0, 0);
+  animation: aniWomen 2s forwards;
+  animation-delay: 1ms;
+
+  @keyframes aniWomen {
+    0% {
+      right: 0%;
+      transform: translate(0, 0);
+    }
+    100% {
+      right: 50%;
+      transform: translate(50%, 0);
+    }
+  }
+`;
+
+export const LavanderTop = styled.div`
+  position: absolute;
+  background-image: url(${lavanderTop});
+  width: 290px;
+  height: 290px;
+  right: calc(50% - 390px);
+  top: -208px;
+  background-size: contain;
+  opacity: 0.6;
+
+  animation: aniTop 3s forwards;
+
+  @keyframes aniTop {
+    0% {
+      top: -208px;
+    }
+    100% {
+      top: -108px;
+    }
+  }
+`;
+
+export const LavanderTopLeft = styled.div`
+  position: absolute;
+  background-image: url(${lavanderTop});
+  width: 290px;
+  height: 290px;
+  left: calc(50% - 390px);
+  top: -108px;
+  background-size: contain;
+  transform: scale(-1, 1);
+  opacity: 0.6;
+
+  animation: aniTop 3s forwards;
+`;
+
+export const Leaf = styled.div`
+  position: absolute;
+  background-image: url(${leaf});
+  width: 273px;
+  height: 273px;
+  top: -108px;
+  background-size: contain;
+  opacity: 0.2;
+
+  animation: aniTop 3s forwards;
+`;
