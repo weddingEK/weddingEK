@@ -13,13 +13,27 @@ import "./font/lemon.otf";
 import "./font/exo.otf";
 import "./font/Oranienbaum.ttf";
 import { Container } from "./styles";
-import { useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
   // const handleClick = () => {
   //   const context = new AudioContext();
   //   context.resume();
   // };
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+  if (loading)
+    return (
+      <div class='loaderdiv'>
+        <span class='loader'></span>
+      </div>
+    );
   return (
     <Container>
       <FirstBlock />

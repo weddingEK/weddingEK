@@ -17,7 +17,6 @@ export const Container = styled.div`
   background-size: 480px;
   background-repeat: no-repeat;
   overflow: hidden;
-
   animation: aniCircle 3s forwards;
 
   @keyframes aniCircle {
@@ -94,7 +93,18 @@ export const Names = styled.span`
   font-size: 64px;
   color: #534f76;
   width: 100%;
+  opacity: 0;
+  animation: animate 1.5s forwards;
+  animation-delay: 0.5ms;
 
+  @keyframes animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   p {
     padding: 0;
     margin: 0;
