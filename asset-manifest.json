@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/weddingEK/static/css/main.4e12ba08.css",
-    "main.js": "/weddingEK/static/js/main.82351bc5.js",
+    "main.css": "/weddingEK/static/css/main.5da0b0e1.css",
+    "main.js": "/weddingEK/static/js/main.1b4685b9.js",
     "static/js/787.6d1fe003.chunk.js": "/weddingEK/static/js/787.6d1fe003.chunk.js",
     "static/media/lavander-circle.png": "/weddingEK/static/media/lavander-circle.b819b403bce84272365c.png",
     "static/media/lemon.otf": "/weddingEK/static/media/lemon.024c8ca4a177ed80a27a.otf",
     "static/media/madelyn.otf": "/weddingEK/static/media/madelyn.049480f85318a9c4ab6d.otf",
     "static/media/sweet.ttf": "/weddingEK/static/media/sweet.cc42e753706b5a0d6ef5.ttf",
+    "static/media/montserrat.ttf": "/weddingEK/static/media/montserrat.9e32cee38e5268e05e87.ttf",
     "static/media/Oranienbaum.ttf": "/weddingEK/static/media/Oranienbaum.e5625604e9200634b240.ttf",
     "static/media/exo.otf": "/weddingEK/static/media/exo.4cc3c0816f37acdf2605.otf",
+    "static/media/czizh.ttf": "/weddingEK/static/media/czizh.4cee4f4a3385bddc39b1.ttf",
+    "static/media/maki.ttf": "/weddingEK/static/media/maki.9d411b80cc14eea780bf.ttf",
     "static/media/lavander-top.png": "/weddingEK/static/media/lavander-top.1dcf46ea595c405a78f9.png",
     "index.html": "/weddingEK/index.html",
-    "main.4e12ba08.css.map": "/weddingEK/static/css/main.4e12ba08.css.map",
-    "main.82351bc5.js.map": "/weddingEK/static/js/main.82351bc5.js.map",
+    "main.5da0b0e1.css.map": "/weddingEK/static/css/main.5da0b0e1.css.map",
+    "main.1b4685b9.js.map": "/weddingEK/static/js/main.1b4685b9.js.map",
     "787.6d1fe003.chunk.js.map": "/weddingEK/static/js/787.6d1fe003.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e12ba08.css",
-    "static/js/main.82351bc5.js"
+    "static/css/main.5da0b0e1.css",
+    "static/js/main.1b4685b9.js"
   ]
 }
