@@ -7,10 +7,15 @@ import "./App.css";
 // import Form from "./component/Form";
 // import Contacts from "./component/Contacts";
 import FirstBlock from "./component/FirstBlock";
+import SecondBlock from "./component/SecondBlock";
 import "./font/sweet.ttf";
+import "./font/montserrat.ttf";
+import "./font/czizh.ttf";
 import "./font/madelyn.otf";
 import "./font/lemon.otf";
 import "./font/exo.otf";
+
+import "./font/maki.ttf";
 import "./font/Oranienbaum.ttf";
 import { Container } from "./styles";
 import { useState, useEffect } from "react";
@@ -37,6 +42,7 @@ function App() {
   return (
     <Container>
       <FirstBlock />
+      <SecondBlock />
       {/* <audio id='myaudio' loop controls autoPlay>
         <source
           src='https://od.lk/s/N18yMzgyNDE2NzJf/song.ogg'

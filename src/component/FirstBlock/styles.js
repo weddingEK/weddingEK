@@ -36,8 +36,8 @@ export const Title = styled.h2`
   margin: 0;
   animation: ani 1.5s forwards;
   color: #534f75;
-  font-size: 20px;
-  font-family: "exo";
+  font-size: 17px;
+  font-family: "maki";
   line-height: 1;
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -62,7 +62,7 @@ export const Data = styled.h2`
   animation: aniData 1.5s forwards;
   color: #534f75;
   font-size: 20px;
-  font-family: "exo";
+  font-family: "maki";
   line-height: 1;
   font-weight: 400;
   letter-spacing: 1.5px;

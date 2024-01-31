@@ -1,4 +1,22 @@
 @font-face {
+  font-family: "maki";
+  src: local("maki"), url("./font/maki.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "czizh";
+  src: local("czizh"), url("./font/czizh.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: local("montserrat"), url("./font/montserrat.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
   font-family: "sweet";
   src: local("Sweer"), url("./font/sweet.ttf") format("truetype");
   font-weight: normal;
