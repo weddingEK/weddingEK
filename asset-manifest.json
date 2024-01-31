@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weddingEK/static/css/main.5da0b0e1.css",
-    "main.js": "/weddingEK/static/js/main.1b4685b9.js",
+    "main.js": "/weddingEK/static/js/main.ae122351.js",
     "static/js/787.6d1fe003.chunk.js": "/weddingEK/static/js/787.6d1fe003.chunk.js",
     "static/media/lavander-circle.png": "/weddingEK/static/media/lavander-circle.b819b403bce84272365c.png",
     "static/media/lemon.otf": "/weddingEK/static/media/lemon.024c8ca4a177ed80a27a.otf",
@@ -15,11 +15,11 @@
     "static/media/lavander-top.png": "/weddingEK/static/media/lavander-top.1dcf46ea595c405a78f9.png",
     "index.html": "/weddingEK/index.html",
     "main.5da0b0e1.css.map": "/weddingEK/static/css/main.5da0b0e1.css.map",
-    "main.1b4685b9.js.map": "/weddingEK/static/js/main.1b4685b9.js.map",
+    "main.ae122351.js.map": "/weddingEK/static/js/main.ae122351.js.map",
     "787.6d1fe003.chunk.js.map": "/weddingEK/static/js/787.6d1fe003.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5da0b0e1.css",
-    "static/js/main.1b4685b9.js"
+    "static/js/main.ae122351.js"
   ]
 }
