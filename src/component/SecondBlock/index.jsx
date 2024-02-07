@@ -8,6 +8,7 @@ import {
   Calendar,
   CalSceleton,
   Month,
+  Bg2,
 } from "./styles";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
@@ -54,6 +55,7 @@ export default function SecondBlock() {
   return (
     <Container>
       <Bg />
+      <Bg2 />
       <Info>
         {isLoadedTitle ? (
           <Title key='displayesTitle' ref={ref1}>

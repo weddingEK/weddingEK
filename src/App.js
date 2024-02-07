@@ -8,6 +8,11 @@ import "./App.css";
 // import Contacts from "./component/Contacts";
 import FirstBlock from "./component/FirstBlock";
 import SecondBlock from "./component/SecondBlock";
+import ThirdBlock from "./component/ThirdBlock";
+import FourthBlock from "./component/FourthBlock";
+import FifthBlock from "./component/FifthBlock";
+import SixBlock from "./component/SixBlock";
+import SevenBlock from "./component/SevenBlock";
 import "./font/sweet.ttf";
 import "./font/montserrat.ttf";
 import "./font/czizh.ttf";
@@ -43,6 +48,11 @@ function App() {
     <Container>
       <FirstBlock />
       <SecondBlock />
+      <FourthBlock />
+      <ThirdBlock />
+      <FifthBlock />
+      <SixBlock />
+      <SevenBlock />
       {/* <audio id='myaudio' loop controls autoPlay>
         <source
           src='https://od.lk/s/N18yMzgyNDE2NzJf/song.ogg'

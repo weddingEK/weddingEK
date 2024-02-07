@@ -1,44 +1,55 @@
 import styled from "styled-components";
 import lavanderTop from "../FirstBlock/assets/lavander-top.png";
 import leaf from "../FirstBlock/assets/leaf.png";
-import Datetime from "./assets/24.png";
 
 export const Container = styled.div`
   padding: 80px 0;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   position: relative;
 
+  iframe {
+    height: 0;
+    animation: aniIframe 2s forwards;
+
+    @keyframes aniIframe {
+      0% {
+        height: 0;
+      }
+      100% {
+        height: 350px;
+      }
+    }
+  }
   @media (max-width: 680px) {
     padding: 20px 0 80px;
   }
 `;
 
 export const Bg = styled.div`
+  transform: rotate(203deg);
+  top: 227px;
   position: absolute;
-  top: -120px;
-  left: 0;
+  right: calc(50% - 342px);
   background-image: url(${lavanderTop});
-  background-size: 600px;
-  height: 800px;
-  width: 800px;
+  background-size: 400px;
+  height: 400px;
+  width: 400px;
   background-repeat: no-repeat;
-  opacity: 0.1;
-  transform: rotate(337deg);
+  opacity: 0.8;
+  z-index: 1;
 
   @media (max-width: 680px) {
-    left: -100px;
-    background-size: 400px;
-    height: 400px;
-    width: 400px;
+    display: none;
   }
 `;
 
 export const Bg2 = styled.div`
   position: absolute;
-  bottom: 200px;
-  right: 0;
+  top: 0;
+  left: 0;
   background-image: url(${leaf});
   background-size: 600px;
   height: 400px;
@@ -47,7 +58,6 @@ export const Bg2 = styled.div`
   opacity: 0.1;
 
   @media (max-width: 680px) {
-    right: -100px;
     background-size: 400px;
     height: 400px;
     width: 400px;
@@ -55,8 +65,12 @@ export const Bg2 = styled.div`
 `;
 
 export const Info = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "madelyn";
   width: 350px;
+  z-index: 2;
 `;
 
 export const Title = styled.p`
@@ -88,59 +102,38 @@ export const Text = styled.p`
   animation: aniTB1 3s forwards;
 `;
 
-export const Date = styled.p`
-  font-family: "madelyn";
-  font-size: 42px;
-  font-weight: 400;
-  color: #534f76;
+export const Btn = styled.button`
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "czizh";
+  font-size: 22px;
+  font-weight: 500;
+  height: 42px;
+  padding: 0 1.6rem;
   text-align: center;
-  animation: aniTB1 3s forwards;
-`;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 32px;
 
-export const Month = styled.p`
-  font-size: 64px;
-  line-height: 52px;
-  color: #534f76;
-  text-align: center;
-  margin: 42px 0 0;
-  animation: aniTB1 3s forwards;
-`;
-
-export const Calendar = styled.div`
-  position: relative;
-  background-image: url(${Datetime});
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 230px;
-  width: 350px;
-  animation: aniTB1 3s forwards;
-  animation-delay: 1s;
-  opacity: 0;
-
-  svg {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    bottom: 30px;
-    right: 81px;
-
-    animation: aniHeart 3s infinite;
-
-    @keyframes aniHeart {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.3);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
+  :hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: 0.1s;
   }
-`;
 
-export const CalSceleton = styled.div`
-  height: 350px;
-  width: 350px;
+  @media (min-width: 768px) {
+    padding: 0 2.6rem;
+  }
 `;
