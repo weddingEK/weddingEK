@@ -16,7 +16,6 @@ export const Container = styled.div`
   background-position: center;
   background-size: 480px;
   background-repeat: no-repeat;
-  overflow: hidden;
   animation: aniCircle 3s forwards;
 
   @keyframes aniCircle {
@@ -25,6 +24,56 @@ export const Container = styled.div`
     }
     100% {
       background-size: 430px;
+    }
+  }
+`;
+
+export const Play = styled.div`
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #534f75;
+  animation: aniPllay 1.5s forwards, aniPllayCircle 1.5s infinite;
+
+  animation-delay: 2s;
+  opacity: 0;
+  svg {
+    cursor: pointer;
+    bottom: 0px;
+    height: 40px;
+    width: 40px;
+  }
+
+  @keyframes aniPllay {
+    0% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes aniPllayCircle {
+    0% {
+      height: 60px;
+      width: 60px;
+      margin-bottom: 0;
+    }
+    50% {
+      height: 70px;
+      margin-bottom: -5px;
+      width: 70px;
+    }
+    100% {
+      height: 60px;
+      width: 60px;
+      margin-bottom: 0;
     }
   }
 `;

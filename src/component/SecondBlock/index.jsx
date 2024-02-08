@@ -37,7 +37,9 @@ export default function SecondBlock() {
 
   useEffect(() => {
     // 👇️ listen for changes
-    if (!isLoadedTitle && isInViewport1) setIsLoadedTitle(true);
+    if (!isLoadedTitle && isInViewport1) {
+      setIsLoadedTitle(true);
+    }
     if (!isLoadedText && isInViewportText) setIsLoadedText(true);
     if (!isLoadedText2 && isInViewportText2) setIsLoadedText2(true);
     if (!isLoadedMonth && isInViewportMonth) setIsLoadedMonth(true);

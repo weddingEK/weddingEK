@@ -31,21 +31,36 @@ function App() {
   //   context.resume();
   // };
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
+      const context = new AudioContext();
+      context.resume();
     }, 2000);
     return () => clearTimeout(timer);
   }, []);
+  document.addEventListener("click", musicPlay);
+  function musicPlay() {
+    document.getElementById("myaudio").volume = 0.05;
+
+    document.getElementById("myaudio").play();
+    document.removeEventListener("click", musicPlay);
+  }
   if (loading)
     return (
       <div class='loaderdiv'>
         <span class='loader'></span>
       </div>
     );
+
   return (
     <Container>
+      <audio id='myaudio' volume='0.1' autoPlay loop>
+        <source
+          src='https://od.lk/s/N18yMzgyNDE2NzJf/song.ogg'
+          type='audio/ogg'
+        />
+      </audio>
       <FirstBlock />
       <SecondBlock />
       <FourthBlock />
@@ -53,12 +68,7 @@ function App() {
       <FifthBlock />
       <SixBlock />
       <SevenBlock />
-      {/* <audio id='myaudio' loop controls autoPlay>
-        <source
-          src='https://od.lk/s/N18yMzgyNDE2NzJf/song.ogg'
-          type='audio/ogg'
-        />
-      </audio> */}
+
       {/* <BannerComponent />
       <WeddingConvert />
       <Prog />
