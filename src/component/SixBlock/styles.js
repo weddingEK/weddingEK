@@ -59,6 +59,10 @@ export const Info = styled.div`
   font-family: "madelyn";
   width: 350px;
   z-index: 2;
+
+  iframe {
+    overflow: hidden;
+  }
 `;
 
 export const Title = styled.p`

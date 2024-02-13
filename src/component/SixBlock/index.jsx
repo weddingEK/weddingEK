@@ -51,6 +51,8 @@ export default function SixBlock() {
           name='ya-form-65b60a07c417f3b45f3c7c5e'
           height='580'
           width='370'
+          scrolling='no'
+          style='overflow: hidden'
         ></iframe>
       </Info>
     </Container>
