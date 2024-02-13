@@ -52,7 +52,6 @@ export default function SixBlock() {
           height='580'
           width='370'
           scrolling='no'
-          style='overflow: hidden'
         ></iframe>
       </Info>
     </Container>
