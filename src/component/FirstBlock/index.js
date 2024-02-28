@@ -9,11 +9,13 @@ import {
   LavanderTopLeft,
   Leaf,
   Play,
+  MainImage,
 } from "./styles";
 
 export default function FirstBlock() {
   return (
     <Container>
+      <MainImage />
       <LavanderTop />
       <LavanderTopLeft />
       <Leaf />

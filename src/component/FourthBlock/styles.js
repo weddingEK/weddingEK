@@ -162,6 +162,7 @@ export const Times = styled.div`
   flex-direction: column;
   gap: 8px;
   align-items: center;
+  width: 120px;
 `;
 
 export const Times2 = styled(Times)`
@@ -197,7 +198,7 @@ export const Timing = styled.div`
   justify-content: space-between;
   display: flex;
   gap: 12px;
-  height: 400px;
+  height: 600px;
   animation: aniTB1 2s forwards;
   animation-delay: 1s;
   opacity: 0;
@@ -209,7 +210,8 @@ export const Line = styled.div`
   background-color: #534f76;
   min-width: 1px;
   height: 0;
-
+  align-self: flex-start;
+  margin-top: 50px;
   animation: aniLine 2.5s forwards;
 
   @keyframes aniLine {
@@ -217,7 +219,7 @@ export const Line = styled.div`
       height: 0;
     }
     100% {
-      height: 70%;
+      height: 470px;
     }
   }
 `;
@@ -240,4 +242,34 @@ export const Dot2 = styled.div`
   width: 5px;
   height: 5px;
   border-radius: 50%;
+`;
+
+export const Dot3 = styled.div`
+  position: absolute;
+  bottom: 180px;
+  right: -2px;
+  background-color: #534f76;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+`;
+
+export const Dot4 = styled.div`
+  position: absolute;
+  top: 150px;
+  right: -2px;
+  background-color: #534f76;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+`;
+
+export const TimingLine = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+
+export const TimingLine2 = styled(TimingLine)`
+  margin: 50% 0 0;
 `;

@@ -13,6 +13,10 @@ import {
   Line,
   Dot,
   Dot2,
+  Dot3,
+  Dot4,
+  TimingLine,
+  TimingLine2,
   Bg3,
   Bg4,
   Bg5,
@@ -20,8 +24,9 @@ import {
 import { useIsInViewport } from "../../hooks/useIsInViewport";
 import { useRef, useEffect, useState } from "react";
 import closh from "./assets/closh.png";
-import pin from "./assets/place.png";
-
+import cheers from "./assets/cheers.png";
+import cake from "./assets/cake.png";
+import confetti from "./assets/confetti.png";
 export default function FourthBlock() {
   const ref1 = useRef(null);
   const refText = useRef(null);
@@ -56,36 +61,64 @@ export default function FourthBlock() {
           </Title>
         )}
         {isLoadedText ? (
-          <Timing key='hText' ref={refText}>
-            <Times>
-              <Circle>
-                <Im src={closh} />
-              </Circle>
-              <Time>14:30</Time>
-              <Text>
-                Сбор
-                <br />
-                гостей
-              </Text>
-            </Times>
-            <Line>
-              <Dot />
-              <Dot2 />
-            </Line>
-            <Times2>
-              <Circle>
-                <Im src={pin} />
-              </Circle>
-              <Time>16:00</Time>
-              <Text>
-                 Начало
-                <br />
-                свадебнного
-                <br />
-                ужина
-              </Text>
-            </Times2>
-          </Timing>
+          <>
+            <Timing key='hText' ref={refText}>
+              <TimingLine>
+                <Times>
+                  <Circle>
+                    <Im src={cheers} />
+                  </Circle>
+                  <Time>15:30</Time>
+                  <Text>
+                    Сбор
+                    <br />
+                    гостей
+                  </Text>
+                </Times>
+                <Times>
+                  <Circle>
+                    <Im src={cake} />
+                  </Circle>
+                  <Time>21:00</Time>
+                  <Text>
+                    Шедевр <br />
+                    кондитерского
+                    <br />
+                    искусства
+                  </Text>
+                </Times>
+              </TimingLine>
+              <Line>
+                <Dot></Dot>
+                <Dot2></Dot2>
+                <Dot3 />
+                <Dot4 />
+              </Line>
+              <TimingLine2>
+                <Times2>
+                  <Circle>
+                    <Im src={closh} />
+                  </Circle>
+                  <Time>16:00</Time>
+                  <Text>
+                     Начало
+                    <br />
+                    свадебного
+                    <br />
+                    ужина
+                  </Text>
+                </Times2>
+
+                <Times2>
+                  <Circle>
+                    <Im src={confetti} />
+                  </Circle>
+                  <Time>22:00</Time>
+                  <Text>Финал</Text>
+                </Times2>
+              </TimingLine2>
+            </Timing>
+          </>
         ) : (
           <Text key='hiddenText' ref={refText}>
             <br /> <br /> <br /> <br />

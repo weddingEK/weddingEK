@@ -106,7 +106,7 @@ export default function SevenBlock() {
         </a>
         <Bg />
         <Text key='displayesText1' ref={refText1}>
-          <p>Мы будем рады видеть вас на нашем празднике!</p>
+          <p>Мы будем рады видеть Вас на нашем празднике!</p>
           <DatesBeforeWedding>
             <Numbers id='timer-days' />
             <Numbers id='timer-hours' />

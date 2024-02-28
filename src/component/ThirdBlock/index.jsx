@@ -41,7 +41,7 @@ export default function ThirdBlock() {
         {isLoadedText ? (
           <Text key='displayesText' ref={refText}>
             Торжество будет проходить в ресторане "Хурма",(развлекательный
-            комплекс Шато, 2 этаж)
+            комплекс Белый Медведь, 2 этаж)
           </Text>
         ) : (
           <Text key='hiddenText' ref={refText}>

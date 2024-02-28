@@ -10,13 +10,22 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 40px 0;
-  background-image: url(${lavander});
   gap: 32px;
   height: calc(100% - 80px);
+`;
+
+export const MainImage = styled.div`
+  position: absolute;
+  width: 100%;
+  top: -40px;
+  height: calc(100% + 80px);
+  background-image: url(${lavander});
+  gap: 32px;
   background-position: center;
   background-size: 480px;
   background-repeat: no-repeat;
   animation: aniCircle 3s forwards;
+  animation-delay: 3s;
 
   @keyframes aniCircle {
     0% {
@@ -40,8 +49,7 @@ export const Play = styled.div`
   border-radius: 50%;
   border: 1px solid #534f75;
   animation: aniPllay 1.5s forwards, aniPllayCircle 1.5s infinite;
-
-  animation-delay: 2s;
+  animation-delay: 5s;
   opacity: 0;
   svg {
     cursor: pointer;
@@ -84,6 +92,7 @@ export const Title = styled.h2`
   padding: 40px 0 0;
   margin: 0;
   animation: ani 1.5s forwards;
+  animation-delay: 3s;
   color: #534f75;
   font-size: 17px;
   font-family: "maki";
@@ -115,7 +124,7 @@ export const Data = styled.h2`
   line-height: 1;
   font-weight: 400;
   letter-spacing: 1.5px;
-  animation-delay: 0.5s;
+  animation-delay: 3.5s;
 
   @keyframes aniData {
     0% {
@@ -142,9 +151,6 @@ export const Names = styled.span`
   font-size: 64px;
   color: #534f76;
   width: 100%;
-  opacity: 0;
-  animation: animate 1.5s forwards;
-  animation-delay: 0.5ms;
 
   @keyframes animate {
     0% {
@@ -166,18 +172,15 @@ export const Man = styled.p`
   left: 0;
   line-height: 82px;
   font-size: 98px;
-  transform: translate(0, 0);
   animation: aniMan 1.5s forwards;
-  animation-delay: 0.5ms;
+  animation-delay: 3.005s;
 
   @keyframes aniMan {
     0% {
       left: 0%;
-      transform: translate(0, 0);
     }
     100% {
-      left: 50%;
-      transform: translate(-50%, 0);
+      left: calc(50% - 60px);
     }
   }
 `;
@@ -188,18 +191,15 @@ export const Women = styled.p`
   right: 0;
   line-height: 82px;
   font-size: 92px;
-  transform: translate(0, 0);
   animation: aniWomen 2s forwards;
-  animation-delay: 1ms;
+  animation-delay: 3.001s;
 
   @keyframes aniWomen {
     0% {
       right: 0%;
-      transform: translate(0, 0);
     }
     100% {
-      right: 50%;
-      transform: translate(50%, 0);
+      right: calc(50% - 120px);
     }
   }
 `;
@@ -215,6 +215,7 @@ export const LavanderTop = styled.div`
   opacity: 0.6;
 
   animation: aniTop 3s forwards;
+  animation-delay: 3s;
 
   @keyframes aniTop {
     0% {
@@ -238,6 +239,7 @@ export const LavanderTopLeft = styled.div`
   opacity: 0.6;
 
   animation: aniTop 3s forwards;
+  animation-delay: 3s;
 `;
 
 export const Leaf = styled.div`
@@ -250,4 +252,5 @@ export const Leaf = styled.div`
   opacity: 0.2;
 
   animation: aniTop 3s forwards;
+  animation-delay: 3s;
 `;
